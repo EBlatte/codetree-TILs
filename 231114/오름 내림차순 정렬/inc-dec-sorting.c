@@ -11,9 +11,6 @@ void up(int a[],int n){
         a[j] = d;
         }
     }
-    for(i=0;i<n;i++)
-    printf("%d ",a[i]);
-    printf("\n");
 }
 void down(int a[],int n){
     int i,j;
@@ -26,9 +23,6 @@ void down(int a[],int n){
         a[j] = d;
         }
     }
-    for(i=0;i<n;i++)
-    printf("%d ",a[i]);
-    printf("\n");
 }
 
 
@@ -40,7 +34,14 @@ int main() {
     scanf("%d",&a[i]);
 
     down(a,n);
+    for(i=0;i<n;i++)
+    printf("%d ",a[i]);
+    printf("\n");
+    
     up(a,n);
+    for(i=0;i<n;i++)
+    printf("%d ",a[i]);
+    printf("\n");
 
     return 0;
 }
