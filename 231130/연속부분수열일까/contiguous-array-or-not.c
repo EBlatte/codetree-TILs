@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void input(int *p,int n){
+void input(int p[],int n){
     int i;
     for(i=0;i<n;i++){
     scanf("%d",&p[i]);
@@ -29,11 +29,10 @@ int sw(int *a,int *b,int n1,int n2){
 int main() {
     int n1,n2;
     int k=0;
-    int *a, *b;
+    int a[100],b[100] ;
 
     scanf("%d %d",&n1,&n2);
-    a=(int *)malloc(sizeof(int)*n1);
-    b=(int *)malloc(sizeof(int)*n1);
+
     input(a,n1);
     input(b,n2);
     k=sw(a,b,n1,n2);
